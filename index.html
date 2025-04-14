@@ -1,34 +1,55 @@
+
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html class="dark" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Directory Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Tools Directory - Premium AI Tools Collection</title>
     <meta name="description" content="Discover the best AI tools for writing, SEO, chatbots, and more.">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="bg-gray-900 text-gray-100">
     <header class="fixed w-full bg-gray-900/95 backdrop-blur-sm z-50">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="/" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity">AI Tools</a>
-                <button class="lg:hidden text-white hover:text-purple-500 transition-colors">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path></svg>
+                <a href="https://test-acc-12349.github.io/ai-tools-2025-04-14-lybq8/" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity">AI Tools</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#tools" class="text-gray-300 hover:text-purple-400 transition-colors">Tools</a>
+                    <a href="#submit" class="text-gray-300 hover:text-purple-400 transition-colors">Submit</a>
+                    <a href="#about" class="text-gray-300 hover:text-purple-400 transition-colors">About</a>
+                </div>
+                <button class="mobile-menu-button md:hidden" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4 bg-gray-800 rounded-lg p-4">
+                <a href="#tools" class="block py-2 text-gray-300 hover:text-purple-400">Tools</a>
+                <a href="#submit" class="block py-2 text-gray-300 hover:text-purple-400">Submit</a>
+                <a href="#about" class="block py-2 text-gray-300 hover:text-purple-400">About</a>
             </div>
         </nav>
     </header>
 
-    <section class="h-[50vh] flex items-center justify-center bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900">
-        <div class="text-center px-6">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">AI Tools</h1>
-            <p class="text-xl md:text-2xl text-gray-300 mb-8">Get the ultimate AI Tools</p>
-            <a href="https://aitools.com" class="inline-block px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold text-white hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-purple-500/25">Explore Tools</a>
+    <section class="h-[50vh] flex items-center justify-center bg-[url('https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-gray-900/90 via-purple-900/90 to-gray-900/90"></div>
+        <div class="text-center px-6 relative z-10">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">AI Tools Directory</h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8">Discover the Most Advanced AI Tools for Your Business</p>
+            <a href="#tools" class="inline-block px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold text-white hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-purple-500/25">Explore Tools</a>
         </div>
     </section>
 
     <main class="container mx-auto px-6 py-16">
-        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+        <section id="tools" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
             <article class="bg-gray-800 rounded-xl p-6 hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-purple-500/25">
                 <h3 class="text-xl font-semibold mb-3 text-purple-400">AI Writer</h3>
                 <p class="text-gray-400 mb-4">Best AI Writing Tool</p>
@@ -61,14 +82,17 @@
             </article>
         </section>
 
-        <section class="bg-gradient-to-r from-purple-900 to-pink-900 rounded-2xl p-12 text-center mb-20">
-            <h2 class="text-3xl font-bold mb-4">Submit Your AI Tool</h2>
-            <p class="text-xl text-gray-300 mb-8">Join our curated collection of premium AI tools</p>
-            <a href="https://aitools.com" class="inline-block px-8 py-4 bg-white text-purple-900 rounded-full font-semibold hover:scale-105 transition-transform duration-300">Submit Listing</a>
+        <section id="submit" class="bg-gradient-to-r from-purple-900 to-pink-900 rounded-2xl p-12 text-center mb-20 bg-[url('https://images.unsplash.com/photo-1620121684840-edffcfc4b878?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80')] bg-cover bg-center relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-r from-purple-900/90 to-pink-900/90"></div>
+            <div class="relative z-10">
+                <h2 class="text-3xl font-bold mb-4">Submit Your AI Tool</h2>
+                <p class="text-xl text-gray-300 mb-8">Join our exclusive collection of premium AI tools and reach thousands of potential users</p>
+                <a href="https://aitools.com" class="inline-block px-8 py-4 bg-white text-purple-900 rounded-full font-semibold hover:scale-105 transition-transform duration-300 shadow-xl">Submit Your Listing</a>
+            </div>
         </section>
 
-        <section class="mb-20">
-            <h2 class="text-3xl font-bold mb-8">About Us</h2>
+        <section id="about" class="mb-20">
+            <h2 class="text-3xl font-bold mb-8">About Our Directory</h2>
             <p class="text-gray-300 leading-relaxed">Welcome to AI Tools, your premier destination for discovering cutting-edge artificial intelligence solutions. We carefully curate and showcase the most innovative AI tools available today, helping professionals and businesses harness the power of artificial intelligence to enhance their productivity and creativity.</p>
         </section>
     </main>
@@ -81,10 +105,23 @@
                     <p class="text-gray-400">admin@aitools.com</p>
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold mb-4">Links</h3>
+                    <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-purple-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-purple-400"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Resources</h3>
                     <ul class="space-y-2">
-                        <li><a href="/privacy" class="text-gray-400 hover:text-purple-400 transition-colors">Privacy Policy</a></li>
-                        <li><a href="/terms" class="text-gray-400 hover:text-purple-400 transition-colors">Terms of Service</a></li>
+                        <li><a href="https://test-acc-12349.github.io/ai-tools-2025-04-14-lybq8/blog.html" class="text-gray-400 hover:text-purple-400 transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://test-acc-12349.github.io/ai-tools-2025-04-14-lybq8/privacy.html" class="text-gray-400 hover:text-purple-400 transition-colors">Privacy Policy</a></li>
+                        <li><a href="https://test-acc-12349.github.io/ai-tools-2025-04-14-lybq8/terms.html" class="text-gray-400 hover:text-purple-400 transition-colors">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
@@ -93,5 +130,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
